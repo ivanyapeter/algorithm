@@ -1,0 +1,173 @@
+/* 01 IMPORT FONT FAMILY
+--------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+/* 02 CSS RESET
+--------------------------------------------------------------- */
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	}
+  *:before, *:after {
+    box-sizing: inherit;
+  	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+body {
+  margin: 0; }
+
+h1,h2,h3,h4,p,
+blockquote,ol,ul {
+  margin: 0;
+  padding: 0;
+}
+
+main,li {
+  display: block;
+}
+
+h1,h2,h3,h4 {
+  font-size: inherit;
+}
+
+a,button {
+  color: inherit;
+  transition: .3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+	outline: none;
+}
+
+img {
+  max-width: 100%; /*do you want max width 100%?*/
+  height: 100%;
+  border: 0;
+}
+
+/* 03 GENERAL SETTING
+--------------------------------------------------------------- */
+body {
+  /* Find these details */
+  font-family: 'Open Sans';
+  color: #0c0b41;
+  text-align: justify;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.wrapper {
+  /* Find width and max width */
+  width: 86.79525222551929%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, p {
+
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+p {
+
+}
+
+hr {
+  border: 2px solid #0c0b41;
+  width: 50px;
+  margin-bottom: 40px;
+}
+
+/*.clearfix:after {
+  visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}*/
+
+/*.vertical-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}*/
+
+/*.both-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
+
+
+/* 04 HEADER SECTION
+--------------------------------------------------------------- */
+header {
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  text-indent: -10000px;
+  background: url(../images/logo.png) no-repeat;
+  background-size: cover;
+  width: 200px;
+  float: left;
+}
+
+header nav {
+  float: right;
+}
+
+header:after {
+  display: block;
+	content: "";
+	clear: both;
+}
+
+header nav li a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-left: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  /* to style the navigation link*/
+}
+
+header nav li a.current {
+  border-bottom: 3px solid #0c0b41;
+}
